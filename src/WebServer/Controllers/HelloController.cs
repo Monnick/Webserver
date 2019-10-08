@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace WebServer.Controllers
 {
-    [Route("api/hello")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/hello")]
     [ApiController]
     public class HelloController : ControllerBase
     {
