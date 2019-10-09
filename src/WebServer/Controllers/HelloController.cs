@@ -16,7 +16,7 @@ namespace WebServer.Controllers
         {
             await Task.CompletedTask;
 
-            return "hello";
+            return "hello from " + (Environment.GetEnvironmentVariable("HOSTNAME") ?? "bare metal computer");
         }
     }
 }
